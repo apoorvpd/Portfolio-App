@@ -15,19 +15,19 @@ public class MainActivity extends AppCompatActivity {
         Project[] projects = {
                 new Project("Getting Started App",
                         "Our very first project, the default 'Hello World' app!",
-                        5),
+                        R.drawable.getting_started),
                 new Project("Motivation Quote",
                         "Making a simple change to the layout, with my own personal motivation quote for software developers",
-                        5),
+                        R.drawable.quote),
                 new Project("BMI Calculator",
                         "A real life working BMI calculator teaching me Variables, Methods and Conditional Logic",
-                        5),
+                        R.drawable.calculator),
                 new Project("Inches Converter",
                         "A basic converter to convert inches to meters (my own personal calculator app made on my own)",
-                        5),
+                        R.drawable.tape),
                 new Project("The Hungry Developer",
                         "A menu app for a fictional restaurant, learning about Activities, Classes & Objects, Arrays, Intents and ListViews",
-                        5),
+                        R.drawable.hungry_developer),
         };
     }
 }
