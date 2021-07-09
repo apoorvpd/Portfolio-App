@@ -1,6 +1,7 @@
 package com.example.portfolioapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        RecyclerView list = findViewById(R.id.recycler_view_projects);
 
         Project[] projects = {
                 new Project("Getting Started App",
@@ -29,5 +31,13 @@ public class MainActivity extends AppCompatActivity {
                         "A menu app for a fictional restaurant, learning about Activities, Classes & Objects, Arrays, Intents and ListViews",
                         R.drawable.hungry_developer),
         };
+
+        ProjectsAdapter adapter = new ProjectsAdapter(projects);
+
+        list.setAdapter(adapter);
     }
+
+
+
+
 }
